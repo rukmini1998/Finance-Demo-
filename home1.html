@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slider {
+overflow:hidden;
+}
+.slider figure{
+position:relative;
+width:500%;
+margine:0;
+left:0;
+animation:20s slider infinite;
+}
+.slider figure img{
+width:20%;
+float:left;
+}
+ .first-txt { 
+            position: absolute; 
+            text-align: center; 
+            left: 50px; 
+        } 
+  
+        .second-txt { 
+            position: absolute; 
+            bottom: 50px; 
+            left: 50px; 
+        } 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size:20px
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@keyframes slider{
+0%{
+left:0;
+}
+20%{
+left:0;
+}
+25%{
+left:-100%;
+}
+45%{
+left:-100%;
+}
+50%
+{left:-200%;
+}
+70%{
+left:-200%;
+}
+75%{
+left:-300%;
+}
+95%{
+left:--300%;
+}
+100%{
+left:-400%;
+}
+}
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;}
+  
+  .button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button {
+  background-color: green; 
+  color: white; 
+  border: 2px solid #4CAF50;
+}
+
+.button:hover {
+  background-color: #8A2BE2;
+  color: white;
+  }
+    .button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: green; 
+  color: white; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #8A2BE2;
+  color: white;
+  }
+  
+  .rcorners1 {
+  border-radius: 10px;
+  background: white;
+  padding: 20px; 
+  width: 300px;
+  height: 400px; 
+border: 1px solid #4CAF50;  
+ position: absolute; 
+            text-align: center; 
+            right: 50px; 
+}
+.rcorners1:hover {
+  background-color: green;
+  color: white;
+  }
+
+.rcorners2 {
+  border-radius: 10px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 300px;
+  height: 400px; 
+border: 1px solid #4CAF50; 
+position: absolute; 
+            text-align: center; 
+            right: 450px;
+            top : 1250px			
+}
+.rcorners2:hover {
+  background-color: green;
+  color: white;
+  }
+
+.rcorners3 {
+  border-radius: 10px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 300px;
+  height: 400px; 
+border: 1px solid #4CAF50; 
+position: absolute; 
+            text-align: center; 
+            right: 50px;  
+            top : 1650px;			
+}
+.rcorners3:hover {
+  background-color: green;
+  color: white;
+  }
+.rcorners4 {
+  border-radius: 10px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 300px;
+  height: 400px;  
+  border: 1px solid #4CAF50; 
+  position: absolute; 
+            text-align: center; 
+            right: 450px;
+            top : 1750px;
+}
+.rcorners4:hover {
+  background-color: green;
+  color: white;
+  }
+</style>
+<body>
+<div class="navbar">
+  <font face="Lato",size=6>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+<a href="#">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp 
+  <div class="dropdown">
+    <button class="dropbtn">SERVICES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Consulting</a>
+      <a href="#">Stock Markets</a>
+      <a href="#">Mutual Funds</a>
+	  <a href="#">Insurance</a>
+      <a href="#">Business Loans</a>
+      <a href="#">Money Markets</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp </div>
+<a href="#"><img src="logo.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+<a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+<a href="#">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+   <input type="button" class="button" value="SIGN UP NOW">
+  </div> 
+  
+ 
+
+<h3 aligh="center">
+<font face="Lato",size=6>
+
+</font>
+
+
+</h3>
+<div class="slider">
+<figure>
+<img src="6.jpg" >
+<img src="9.jpg" >
+<img src="1.jpg" >
+<img src="2.jpg" >
+<img src="6.jpg" >
+</figure>
+ <h2 class="first-txt"> <marquee behavior="scroll" direction="right">
+           Better finacial future for <br> nex-gen customer <h11>Exponent is pixel perfect theme,that is tailor made for strtup and <br> businesses Build your website swiftly and easily.</h11> 
+        </marquee><input type="button" class="button1" value="LEARN MORE.."></h2> 
+
+          
+        <h2 class="second-txt"> <marquee behavior="scroll" direction="up">
+          Its time to make your money <br> work for you<h11>Our motto is to balance risk <br> with growth<br>Perfect blend of spacious layouts,precise typography and trendy <br>design element
+</marquee></h2>
+</div>
+<div>
+        <h2 class="rcorners1"><br>Insurance<br><p> Tax savings coupled with insurance for the risk averse</p><img src="ins.jpg" ></h2>
+		<h2 class="rcorners2"> <br>Equity Markets<br><p>Invest and Trade in<br>Companies you belive in<br>directly</p><img src="log.jpg" ></h2>
+		<h2 class="rcorners3"><br>Fixed Deposits<br><p>Your money is safe and <br>sound and you get<br>guaranteed returns</p><img src="cur.png" ></h2>
+		<h2 class="rcorners4"><br>Mutual Funds<br><p>Let the expert handle the <br>work of making you rich</p><img src="fund.jpg" ></h2>
+</div>
+</body>
+</html>
